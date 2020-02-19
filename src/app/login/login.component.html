@@ -1,0 +1,30 @@
+<div class="continer">
+    <div class="row">
+        <div class="login_wrap_main">
+            <div class="login_wrap">
+
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="text" class="form-control" formControlName="username" placeholder="Enter Username">
+                        <small class="alert alert-danger" *ngIf="loginForm.controls.username.touched && loginForm.controls.username.errors?.required">
+                  Please enter username!
+              </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" formControlName="password" placeholder="Password">
+                        <small class="alert alert-danger" *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.required">
+                            Please enter Password!
+                        </small>
+                    </div>
+                    <button type="submit" [disabled]="!loginForm.valid" [ngClass]="{'btn':true ,'btn-light': !loginForm.valid,'btn-warning': loginForm.valid}">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
