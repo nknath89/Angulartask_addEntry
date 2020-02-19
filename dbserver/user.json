@@ -54,7 +54,7 @@
     {
       "id": 3,
       "first_name": "Ravi",
-      "last_name": "Bargala",
+      "last_name": "Kumar",
       "address": {
         "state_address": "17143 Burley Stravenue",
         "apart_number": "Ismael Inlet",
@@ -104,7 +104,7 @@
     },
     {
       "id": 6,
-      "first_name": "Ola",
+      "first_name": "Vipul",
       "last_name": "Kihn",
       "address": {
         "state_address": "778 Sven Hill",

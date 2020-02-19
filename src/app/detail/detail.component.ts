@@ -14,6 +14,7 @@ export class DetailComponent implements OnInit {
   frmRecUser;
   singleuser;
   userdata;
+  save= false;
   constructor( private route:ActivatedRoute, private _users:DataService, private _R : Router,private dialog: MatDialog) {
     this.route.params.subscribe(param=> this.singleuser = param.id);
    }
@@ -70,6 +71,8 @@ export class DetailComponent implements OnInit {
     if(this.frmRecUser.status === "VALID"){
       this._users.updateUser(user);
       console.log(user);
+
+      this.save = true;
 
       setTimeout(()=>{
         this._R.navigate(["/comp1"])
