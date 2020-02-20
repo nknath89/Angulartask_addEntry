@@ -11,7 +11,8 @@ export class AuthService {
    }
 
    setUserLoggedIn(){
-     this.isUserLoggedIn = true;
+     //this.isUserLoggedIn = true;
+     localStorage.setItem('Cuser', 'true');
    }
 
    getuserLoggedIn(){

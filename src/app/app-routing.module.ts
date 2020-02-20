@@ -8,8 +8,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path:'', component:LoginComponent,pathMatch: 'full'},
-  {path:'comp1', component:ListComponent},
-  {path:'comp2/:id', component:DetailComponent}
+  {path:'comp1', component:ListComponent, canActivate: [AuthGuard]},
+  {path:'comp2/:id', component:DetailComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

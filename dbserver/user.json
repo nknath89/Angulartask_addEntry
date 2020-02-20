@@ -19,8 +19,8 @@
     },
     {
       "id": 1,
-      "first_name": "Ida",
-      "last_name": "Toy",
+      "first_name": "Shugar",
+      "last_name": "Kumar",
       "address": {
         "state_address": "3013 Jannie Throughway",
         "apart_number": "Waters Parkways",
@@ -43,11 +43,11 @@
         "apart_number": "Ismael Inlet",
         "city": "Howeberg",
         "state": "North Carolina",
-        "zip": "22758"
+        "zip": "22759"
       },
       "profile_img": "https://www.fillmurray.com/360/360",
       "total": {
-        "amount": "3500",
+        "amount": "9500",
         "currency": "$"
       }
     },

@@ -20,6 +20,10 @@ export class LoginComponent implements OnInit {
    }
 
   ngOnInit() {
+
+    if(localStorage.getItem('Cuser')){
+      this._router.navigate(["comp1"]);
+    }
   }
 
   onSubmit(){
@@ -29,6 +33,7 @@ export class LoginComponent implements OnInit {
     if(username == "admin" && pass == "admin"){
       this._auth.setUserLoggedIn();
       this._router.navigate(["comp1"]);
+
       // console.log("You are pass");
     }else if(username !== "admin") {
       // alert("User Name is Not right!");

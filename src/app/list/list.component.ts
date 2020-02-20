@@ -34,6 +34,11 @@ export class ListComponent implements OnInit {
    this.router.navigate(["/comp2",users.id])
   }
 
+  Onlogout(){
+    localStorage.removeItem("Cuser");
+    this.router.navigate([""])
+  }
+
  
 
 
